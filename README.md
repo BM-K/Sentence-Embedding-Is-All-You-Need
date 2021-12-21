@@ -18,14 +18,16 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 - [SimCSE-Paper](https://arxiv.org/abs/2104.08821)
 ## Performance
 
-|Model|Cosine Pearson|Cosine Spearman|Euclidean Pearson|Euclidean Spearman|Manhattan Pearson|Manhattan Spearman|Dot Pearson|Dot Spearman|
-|:------------------------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| Model                  |Cosine Pearson|Cosine Spearman|Euclidean Pearson|Euclidean Spearman|Manhattan Pearson|Manhattan Spearman|Dot Pearson|Dot Spearman|
+|------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |-|-|-|-|-|-|-|-|-|
 | | | | | | | | | |
+| KoSBERT<sub>SKT<sub>    | 78.81 | 78.47 | 77.68 | 77.78 | 77.71 | 77.83 | 75.75 | 75.22 |
 |-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|
 | | | | | | | | | |
+| KoSimCSE<sub>SKT<sub>   | 82.12 | 82.56 | 81.84 | 81.63 | 81.99 | 81.74 | 79.55 | 79.19 |
 |-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|
 |-|-|-|-|-|-|-|-|-|
