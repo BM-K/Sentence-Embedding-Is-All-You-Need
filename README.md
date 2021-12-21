@@ -17,3 +17,15 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 ## KoSimCSE
 - [SimCSE-Paper](https://arxiv.org/abs/2104.08821)
 ## Performance
+
+|Model|Cosine Pearson|Cosine Spearman|Euclidean Pearson|Euclidean Spearman|Manhattan Pearson|Manhattan Spearman|Dot Pearson|Dot Spearman|
+|:------------------------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|-|-|-|-|-|-|-|-|-|
+| | | | | | | | | |
+|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|
+| | | | | | | | | |
+|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|
+|-|-|-|-|-|-|-|-|-|
