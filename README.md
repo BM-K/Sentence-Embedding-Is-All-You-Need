@@ -7,7 +7,6 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 |----------------------|----------------|-------------|----------|---------|
 | KLUE-BERT-base            | 768            | 768         | 12       | 12      |
 | KLUE-RoBERTa-base         | 768            | 768         | 12       | 12      |
-| KLUE-RoBERTa-large        | 1024           | 1024        | 24       | 16      |
 
 `NOTE`:  All the pretrained models are uploaded in Huggingface Model Hub. Check https://huggingface.co/klue.
 <br>
@@ -25,9 +24,10 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 | KoSBERT<sup>†</sup><sub>SKT</sub>    | 78.81 | 78.47 | 77.68 | 77.78 | 77.71 | 77.83 | 75.75 | 75.22 |
 | KoSBERT<sub>base</sub>               |-|-|-|-|-|-|-|-|
 | KoSRoBERTa<sub>base</sub>            |-|-|-|-|-|-|-|-|
-| KoSRoBERTa<sub>large</sub>           |-|-|-|-|-|-|-|-|
 | | | | | | | | | |
 | KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>   | 82.12 | 82.56 | 81.84 | 81.63 | 81.99 | 81.74 | 79.55 | 79.19 |
 | KoSimCSE-BERT<sub>base</sub>              |-|-|-|-|-|-|-|-|
 | KoSimCSE-RoBERTa<sub>base</sub>           |-|-|-|-|-|-|-|-|
-| KoSimCSE-RoBERTa<sub>large</sub>          |-|-|-|-|-|-|-|-|
+
+- [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
+- [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
