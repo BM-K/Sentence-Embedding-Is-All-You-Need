@@ -13,9 +13,22 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 
 ## KoSentenceBERT
 - [SBERT-Paper](https://arxiv.org/abs/1908.10084)
+- Pooling Method
+    - MEAN strategy
+- Dataset
+    - Train: snli_1.0_train.ko.tsv (First phase, training NLI), sts-train.tsv (Second phase, continued training STS)
+    - Valid: sts-dev.tsv
+    - Test: sts-test.tsv
 ## KoSimCSE
 - [SimCSE-Paper](https://arxiv.org/abs/2104.08821)
+- Pooling Method
+    - [CLS] strategy
+- Dataset
+    - Train: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
+    - Valid: sts-dev.tsv
+    - Test: sts-test.tsv
 ## Performance
+- Test set results <br>
 
 | Model                  | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
 |------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
