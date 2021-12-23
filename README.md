@@ -19,8 +19,6 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 
 | Model                  | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
 |------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|-|-|-|-|-|-|-|-|-|
-| | | | | | | | | |
 | KoSBERT<sup>†</sup><sub>SKT</sub>    | 78.81 | 78.47 | 77.68 | 77.78 | 77.71 | 77.83 | 75.75 | 75.22 |
 | KoSBERT<sub>base</sub>               |-|-|-|-|-|-|-|-|
 | KoSRoBERTa<sub>base</sub>            |-|-|-|-|-|-|-|-|
