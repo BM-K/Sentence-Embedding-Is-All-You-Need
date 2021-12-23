@@ -33,12 +33,12 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 | Model                  | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
 |------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | KoSBERT<sup>†</sup><sub>SKT</sub>    | 78.81 | 78.47 | 77.68 | 77.78 | 77.71 | 77.83 | 75.75 | 75.22 |
-| KoSBERT<sub>base</sub>               |-|-|-|-|-|-|-|-|
-| KoSRoBERTa<sub>base</sub>            |-|-|-|-|-|-|-|-|
+| KoSBERT<sub>base</sub>               | 82.13 | 82.25 | 80.67 | 80.75 | 80.69 | 80.78 | 77.96 | 77.90 |
+| KoSRoBERTa<sub>base</sub>            | 80.70 | 81.03 | 80.97 | 81.06 | 80.84 | 80.97 | 79.20 | 78.93 |
 | | | | | | | | | |
 | KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>   | 82.12 | 82.56 | 81.84 | 81.63 | 81.99 | 81.74 | 79.55 | 79.19 |
-| KoSimCSE-BERT<sub>base</sub>              |-|-|-|-|-|-|-|-|
-| KoSimCSE-RoBERTa<sub>base</sub>           |-|-|-|-|-|-|-|-|
+| KoSimCSE-BERT<sub>base</sub>              | 82.73 | 83.51 | 82.32 | 82.78 | 82.43 | 82.88 | 77.86 | 76.70 |
+| KoSimCSE-RoBERTa<sub>base</sub>           | 83.64 | 84.05 | 83.32 | 83.84 | 83.33 | 83.79 | 80.92 | 79.84 |
 
 - [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
 - [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
