@@ -26,7 +26,7 @@ bash get_model_checkpoint.sh
 2. SimCSE: Simple Contrastive Learning of Sentence Embeddings [[SimCSE]-[EMNLP 2021]](https://arxiv.org/abs/2104.08821)
 
 ### KoSentenceBERT
-- [Model Training]()
+- [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
 - Pooling Method
     - MEAN strategy
 - Dataset
@@ -35,7 +35,7 @@ bash get_model_checkpoint.sh
     - Test: sts-test.tsv
 
 ### KoSimCSE
-- [Model Training]()
+- [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
 - Pooling Method
     - [CLS] strategy
 - Dataset
@@ -56,8 +56,8 @@ bash get_model_checkpoint.sh
 | KoSimCSE-BERT<sub>base</sub>              | 82.73 | 83.51 | 82.32 | 82.78 | 82.43 | 82.88 | 77.86 | 76.70 |
 | KoSimCSE-RoBERTa<sub>base</sub>           | 83.64 | 84.05 | 83.32 | 83.84 | 83.33 | 83.79 | 80.92 | 79.84 |
 
-- [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
-- [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
+- [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
+- [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
 
 ## Downstream Tasks
 - KoSBERT: Semantic Search, Clustering
