@@ -1,5 +1,6 @@
 # Korean-Sentence-Embedding
-Korean sentence embedding repository
+🍭 Korean sentence embedding repository. You can download the pre-trained models and inference right away, also it provides environments where individuals can train models.
+
 ## Baseline Models
 Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.com/KLUE-benchmark/KLUE/blob/main/README.md)
 
@@ -12,13 +13,15 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 <br>
 
 ## How to start
-- Get datasets to train or test
+- Get datasets to train or test.
 ```
 bash get_model_dataset.sh
 ```
-- If you want to do inference quickly, download the pre-trained models
+- If you want to do inference quickly, download the pre-trained models and then you can start some downstream tasks.
 ```
 bash get_model_checkpoint.sh
+cd KoSBERT/
+python SemanticSearch.py
 ```
 
 ## Available Models
@@ -26,25 +29,21 @@ bash get_model_checkpoint.sh
 2. SimCSE: Simple Contrastive Learning of Sentence Embeddings [[SimCSE]-[EMNLP 2021]](https://arxiv.org/abs/2104.08821)
 
 ### KoSentenceBERT
-- [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
-- Pooling Method
-    - MEAN strategy
+- 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
 - Dataset
     - Train: snli_1.0_train.ko.tsv (First phase, training NLI), sts-train.tsv (Second phase, continued training STS)
     - Valid: sts-dev.tsv
     - Test: sts-test.tsv
 
 ### KoSimCSE
-- [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
-- Pooling Method
-    - [CLS] strategy
+- 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
 - Dataset
     - Train: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
     - Valid: sts-dev.tsv
     - Test: sts-test.tsv
 
 ## Performance
-- Test set results <br>
+- Semantic Textual Similarity test set results <br>
 
 | Model                  | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
 |------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
