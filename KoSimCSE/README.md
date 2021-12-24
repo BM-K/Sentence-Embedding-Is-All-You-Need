@@ -1,12 +1,12 @@
 # KoSimCSE
 KoSimCSE : Sentence Embeddings using contrastive learning
 
-## Training
+## Training 
 - Before training or evaluation, please download the datasets by running
 ```
 bash get_model_dataset.sh
 ```
-### Train KoSimCSE
+### Train KoSimCSE (Supervised Only)
   ```
   python main.py \
     --model klue/bert-base \
