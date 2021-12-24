@@ -56,8 +56,8 @@ bash get_model_checkpoint.sh
 | KoSimCSE-BERT<sub>base</sub>              | 82.73 | 83.51 | 82.32 | 82.78 | 82.43 | 82.88 | 77.86 | 76.70 |
 | KoSimCSE-RoBERTa<sub>base</sub>           | 83.64 | 84.05 | 83.32 | 83.84 | 83.33 | 83.79 | 80.92 | 79.84 |
 
-- [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
-- [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
+- [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
+- [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
 
 ## Downstream Tasks
 - KoSBERT: Semantic Search, Clustering
