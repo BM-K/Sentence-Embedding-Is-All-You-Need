@@ -1,7 +1,11 @@
 # KoSentenceBERT
-Korean SentenceBERT : Sentence Embeddings using Siamese BERT-Networks using KLUE KoBERT and kakaobrain KorNLU dataset
+Korean SentenceBERT : Sentence Embeddings using Siamese BERT-Networks
 
 ## Training
+- Before training or evaluation, please download the datasets by running
+    ```
+    bash get_model_dataset.sh
+    ```
 - Two stage training
     - First step, training NLI dataset
     ```
