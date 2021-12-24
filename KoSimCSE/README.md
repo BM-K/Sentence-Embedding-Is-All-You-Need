@@ -42,7 +42,7 @@ bash run_example.sh
 ```
 ### Hyperparameters
 - Train KoSimCSE (BERT BASE)
-  1. Pooling Method: CLS strategy
+  1. Pooling Method: [CLS] strategy
   2. Batch Size: 512
   3. Evaluation Steps: 250
   4. Epochs: 2
@@ -52,7 +52,7 @@ bash run_example.sh
   8. Temperature: 0.05
   
 - Train KoSimCSE (RoBERTa BASE)
-  1. Pooling Method: CLS strategy
+  1. Pooling Method: [CLS] strategy
   2. Batch Size: 512
   3. Evaluation Steps: 125
   4. Epochs: 2
