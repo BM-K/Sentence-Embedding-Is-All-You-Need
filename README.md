@@ -42,6 +42,9 @@ python SemanticSearch.py
     - Valid: sts-dev.tsv
     - Test: sts-test.tsv
 
+### KoCPSE
+- 🤗 [Model Training]()
+
 ## Performance
 - Semantic Textual Similarity test set results <br>
 
