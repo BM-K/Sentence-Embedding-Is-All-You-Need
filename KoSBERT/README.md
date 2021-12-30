@@ -1,6 +1,6 @@
 # KoSentenceBERT
-[[Github]](https://github.com/UKPLab/sentence-transformers) Official implementation of SBERT <br>
-Korean SentenceBERT : Sentence Embeddings using Siamese BERT-Networks
+[[Github]](https://github.com/UKPLab/sentence-transformers) Official implementation of SBERT. <br>
+Korean SentenceBERT : Korean Sentence Embeddings using Siamese BERT-Networks.
 
 ## Training
 - Before training or evaluation, please download the datasets by running
