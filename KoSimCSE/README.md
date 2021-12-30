@@ -1,4 +1,5 @@
 # KoSimCSE
+[[Github]](https://github.com/UKPLab/sentence-transformers) Official implementation of SimCSE <br>
 KoSimCSE : Sentence Embeddings using contrastive learning
 
 ## Training 
