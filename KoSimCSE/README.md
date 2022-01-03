@@ -13,7 +13,7 @@ bash get_model_dataset.sh
     --model klue/bert-base \
     --test False \
     --max_len 50 \
-    --batch_size 512 \
+    --batch_size 256 \
     --epochs 2 \
     --eval_steps 250 \
     --lr 0.0001 \
@@ -30,7 +30,7 @@ bash get_model_dataset.sh
     --train False \
     --test True \
     --max_len 50 \
-    --batch_size 512 \
+    --batch_size 256 \
     --temperature 0.05 \
     --path_to_data ../Dataset/ \
     --test_data test_sts.tsv \
@@ -44,7 +44,7 @@ bash run_example.sh
 ### Hyperparameters
 - Train KoSimCSE (BERT BASE)
   1. Pooling Method: [CLS] strategy
-  2. Batch Size: 512
+  2. Batch Size: 256
   3. Evaluation Steps: 250
   4. Epochs: 2
   5. Token Max Length: 50
@@ -54,10 +54,10 @@ bash run_example.sh
   
 - Train KoSimCSE (RoBERTa BASE)
   1. Pooling Method: [CLS] strategy
-  2. Batch Size: 512
-  3. Evaluation Steps: 125
+  2. Batch Size: 256
+  3. Evaluation Steps: 250
   4. Epochs: 2
   5. Token Max Length: 50
   6. Learning Rate: 0.0001
-  7. Warmup Ratio: 0.2
+  7. Warmup Ratio: 0.05
   8. Temperature: 0.05
