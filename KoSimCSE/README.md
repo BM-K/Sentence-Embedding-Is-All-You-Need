@@ -59,5 +59,5 @@ bash run_example.sh
   4. Epochs: 2
   5. Token Max Length: 50
   6. Learning Rate: 0.0001
-  7. Warmup Ratio: 0.05
+  7. Warmup Ratio: 0.2
   8. Temperature: 0.05
