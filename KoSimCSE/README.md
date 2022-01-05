@@ -12,10 +12,10 @@ bash get_model_dataset.sh
   python main.py \
     --model klue/bert-base \
     --test False \
-    --max_len 50 \
+    --max_len 64 \
     --batch_size 256 \
     --epochs 2 \
-    --eval_steps 250 \
+    --eval_steps 125 \
     --lr 0.0001 \
     --warmup_ratio 0.1 \
     --temperature 0.05 \
@@ -29,7 +29,7 @@ bash get_model_dataset.sh
     --model klue/bert-base \
     --train False \
     --test True \
-    --max_len 50 \
+    --max_len 64 \
     --batch_size 256 \
     --temperature 0.05 \
     --path_to_data ../Dataset/ \
@@ -45,9 +45,9 @@ bash run_example.sh
 - Train KoSimCSE (BERT BASE)
   1. Pooling Method: [CLS] strategy
   2. Batch Size: 256
-  3. Evaluation Steps: 250
+  3. Evaluation Steps: 125
   4. Epochs: 2
-  5. Token Max Length: 50
+  5. Token Max Length: 64
   6. Learning Rate: 0.0001
   7. Warmup Ratio: 0.1
   8. Temperature: 0.05
@@ -57,7 +57,7 @@ bash run_example.sh
   2. Batch Size: 256
   3. Evaluation Steps: 250
   4. Epochs: 2
-  5. Token Max Length: 50
+  5. Token Max Length: 64
   6. Learning Rate: 0.0001
   7. Warmup Ratio: 0.2
   8. Temperature: 0.05
