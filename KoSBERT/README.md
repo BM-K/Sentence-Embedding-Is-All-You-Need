@@ -26,7 +26,7 @@ Korean SentenceBERT : Korean Sentence Embeddings using Siamese BERT-Networks.
   1. Pooling Method: MEAN strategy
   2. Batch Size: 32
   3. Evaluation Steps: 1000
-  4. Epochs: 1
+  4. Epochs: 1(BERT), 2(RoBERTa)
   
 - Continued Training STS
   1. Pooling Method: MEAN strategy
