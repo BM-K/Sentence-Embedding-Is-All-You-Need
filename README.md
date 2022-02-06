@@ -228,27 +228,18 @@ Cluster  5
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }
-```
-
-```bibtex
 @inproceedings{gao2021simcse,
    title={{SimCSE}: Simple Contrastive Learning of Sentence Embeddings},
    author={Gao, Tianyu and Yao, Xingcheng and Chen, Danqi},
    booktitle={Empirical Methods in Natural Language Processing (EMNLP)},
    year={2021}
 }
-```
-
-```bibtex
 @article{ham2020kornli,
   title={KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding},
   author={Ham, Jiyeon and Choe, Yo Joong and Park, Kyubyong and Choi, Ilji and Soh, Hyungjoon},
   journal={arXiv preprint arXiv:2004.03289},
   year={2020}
 }
-```
-
-```bibtex
 @inproceedings{reimers-2019-sentence-bert,
     title = "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
     author = "Reimers, Nils and Gurevych, Iryna",
