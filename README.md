@@ -44,6 +44,7 @@ python SemanticSearch.py
 
 ### KoCPSE
 - 🤗 [Model Training]()
+    - We have re-uploaded this code
 
 ## Performance
 - Semantic Textual Similarity test set results <br>
