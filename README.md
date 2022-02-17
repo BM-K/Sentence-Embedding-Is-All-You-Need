@@ -49,16 +49,16 @@ python SemanticSearch.py
 ## Performance
 - Semantic Textual Similarity test set results <br>
 
-| Model                  | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
-|------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| KoSBERT<sup>†</sup><sub>SKT</sub>    | 78.81 | 78.47 | 77.68 | 77.78 | 77.71 | 77.83 | 75.75 | 75.22 |
-| KoSBERT<sub>base</sub>               | 82.13 | 82.25 | 80.67 | 80.75 | 80.69 | 80.78 | 77.96 | 77.90 |
-| KoSRoBERTa<sub>base</sub>            | 81.20 | 82.20 | 81.79 | 82.34 | 81.59 | 82.20 | 80.62 | 81.25 |
+| Model                  | AVG | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
+|------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| KoSBERT<sup>†</sup><sub>SKT</sub>    | 77.40 | 78.81 | 78.47 | 77.68 | 77.78 | 77.71 | 77.83 | 75.75 | 75.22 |
+| KoSBERT<sub>base</sub>               | 80.39 | 82.13 | 82.25 | 80.67 | 80.75 | 80.69 | 80.78 | 77.96 | 77.90 |
+| KoSRoBERTa<sub>base</sub>            | 81.64 | 81.20 | 82.20 | 81.79 | 82.34 | 81.59 | 82.20 | 80.62 | 81.25 |
 | | | | | | | | | |
-| KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>   | 82.12 | 82.56 | 81.84 | 81.63 | 81.99 | 81.74 | 79.55 | 79.19 |
-| KoSimCSE-BERT<sub>base</sub>              | 83.05 | 83.33 | 82.62 | 82.96 | 82.78 | 83.09 | 77.97 | 76.70 |
-| KoSimCSE-RoBERTa<sub>base</sub>           | 83.99 | 84.20 | 83.82 | 84.04 | 83.85 | 84.04 | 81.71 | 80.95 |
-| | | | | | | | | |
+| KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>   | 81.32 | 82.12 | 82.56 | 81.84 | 81.63 | 81.99 | 81.74 | 79.55 | 79.19 |
+| KoSimCSE-BERT<sub>base</sub>              | 81.56 | 83.05 | 83.33 | 82.62 | 82.96 | 82.78 | 83.09 | 77.97 | 76.70 |
+| KoSimCSE-RoBERTa<sub>base</sub>           | 83.32 | 83.99 | 84.20 | 83.82 | 84.04 | 83.85 | 84.04 | 81.71 | 80.95 |
+| | | | | | | | | | |
 
 - [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
 - [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
