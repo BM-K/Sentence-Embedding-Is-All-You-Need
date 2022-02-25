@@ -28,6 +28,9 @@ python SemanticSearch.py
 1. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks [[SBERT]-[EMNLP 2019]](https://arxiv.org/abs/1908.10084)
 2. SimCSE: Simple Contrastive Learning of Sentence Embeddings [[SimCSE]-[EMNLP 2021]](https://arxiv.org/abs/2104.08821)
 
+## Datasets
+- [kakao brain KorNLU Datasets](https://github.com/kakaobrain/KorNLUDatasets)
+
 ### KoSentenceBERT
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
 - Dataset
