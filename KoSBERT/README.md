@@ -8,14 +8,16 @@ Korean SentenceBERT : Korean Sentence Embeddings using Siamese BERT-Networks.
     bash get_model_dataset.sh
     ```
 - Two stage training
-    - First step, training NLI dataset
-    ```
-    python training_nli.py --model klue/bert-base --batch 32 --evaluation_steps 1000 --epochs 1
-    ```
-    - Second step, continued training STS dataset
-    ```
-    python con_training_sts.py --model klue/bert-base --batch 32 --evaluation_steps 1000 --epochs 4
-    ```
+    - First step, training NLI dataset 
+    
+        ```
+        python training_nli.py --model klue/bert-base --batch 32 --evaluation_steps 1000 --epochs 1
+        ```
+    - Second step, continued training STS dataset 
+    
+        ```
+        python con_training_sts.py --model klue/bert-base --batch 32 --evaluation_steps 1000 --epochs 4
+        ```
     
 - Run Examples
   ```
