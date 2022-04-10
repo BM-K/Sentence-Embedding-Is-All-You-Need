@@ -77,7 +77,12 @@ python SemanticSearch.py
 ### Semantic Search (KoSimCSE, KoSBERT)
 ```python
 def main():
-    model_name = 'BM-K/KoSimCSE-roberta'
+    model = BERT(AutoModel.from_pretrained('BM-K/KoSimCSE-roberta'))
+    tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta')
+
+    model.to(device)
+    model.eval()
+   
     model, tokenizer, device = example_model_setting(model_name)
 
     # Corpus with example sentences
