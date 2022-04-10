@@ -76,6 +76,9 @@ python SemanticSearch.py
 ```
 ### Semantic Search (KoSimCSE, KoSBERT)
 ```python
+from model.simcse.bert import BERT
+from transformers import AutoModel, AutoTokenizer
+
 def main():
     model = BERT(AutoModel.from_pretrained('BM-K/KoSimCSE-roberta'))
     tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta')
