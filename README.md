@@ -41,7 +41,7 @@ python SemanticSearch.py
 ### KoSimCSE
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
 - Dataset
-    - Train: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
+    - Train: snli_1.0_train.ko.tsv
     - Valid: sts-dev.tsv
     - Test: sts-test.tsv
 
