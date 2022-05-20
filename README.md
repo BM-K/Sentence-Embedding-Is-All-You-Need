@@ -1,6 +1,10 @@
 # Korean-Sentence-Embedding
 🍭 Korean sentence embedding repository. You can download the pre-trained models and inference right away, also it provides environments where individuals can train models.
 
+** Updates on 2021.01.26 **
+- Upload training and code
+- Huggingface model porting
+
 ## Baseline Models
 Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.com/KLUE-benchmark/KLUE/blob/main/README.md)
 
@@ -304,4 +308,4 @@ Cluster  5
 }
 ```
 ## ToDo
-- [X] Huggingface model porting
+- [ ] New method
