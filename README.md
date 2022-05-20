@@ -55,8 +55,8 @@ python SemanticSearch.py
 | KoSRoBERTa<sub>base</sub>            | 81.64 | 81.20 | 82.20 | 81.79 | 82.34 | 81.59 | 82.20 | 80.62 | 81.25 |
 | | | | | | | | | |
 | KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>   | 81.32 | 82.12 | 82.56 | 81.84 | 81.63 | 81.99 | 81.74 | 79.55 | 79.19 |
-| KoSimCSE-BERT<sub>base</sub>              | 81.56 | 83.05 | 83.33 | 82.62 | 82.96 | 82.78 | 83.09 | 77.97 | 76.70 |
-| KoSimCSE-RoBERTa<sub>base</sub>           | 83.35 | 83.91 | 84.22 | 83.60 | 84.07 | 83.64 | 84.04 | 82.01 | 81.32 |
+| KoSimCSE-BERT<sub>base</sub>              | 83.37 | 83.22 | 83.58 | 83.24 | 83.60 | 83.15 | 83.54 | 83.13 | 83.49 |
+| KoSimCSE-RoBERTa<sub>base</sub>           | 83.65 | 83.60 | 83.77 | 83.54 | 83.76 | 83.55 | 83.77 | 83.55 | 83.64 |
 | | | | | | | | | | |
 
 - [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
