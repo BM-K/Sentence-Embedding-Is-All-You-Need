@@ -1,7 +1,7 @@
 # Korean-Sentence-Embedding
 🍭 Korean sentence embedding repository. You can download the pre-trained models and inference right away, also it provides environments where individuals can train models.
 
-** Updates on 2021.01.26 **
+** Updates on 2022.01.26 **
 - Upload training code
 - Huggingface model porting
 
