@@ -34,14 +34,14 @@ python SemanticSearch.py
 ### KoSentenceBERT
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
 - Dataset
-    - Train: snli_1.0_train.ko.tsv (First phase, training NLI), sts-train.tsv (Second phase, continued training STS)
+    - Train: snli_1.0_train.ko.tsv, sts-train.tsv (multi-task)
     - Valid: sts-dev.tsv
     - Test: sts-test.tsv
 
 ### KoSimCSE
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
 - Dataset
-    - Train: snli_1.0_train.ko.tsv
+    - Train: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
     - Valid: sts-dev.tsv
     - Test: sts-test.tsv
 
@@ -57,8 +57,6 @@ python SemanticSearch.py
 | KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>   | 81.32 | 82.12 | 82.56 | 81.84 | 81.63 | 81.99 | 81.74 | 79.55 | 79.19 |
 | KoSimCSE-BERT<sub>base</sub>              | 81.56 | 83.05 | 83.33 | 82.62 | 82.96 | 82.78 | 83.09 | 77.97 | 76.70 |
 | KoSimCSE-RoBERTa<sub>base</sub>           | 83.35 | 83.91 | 84.22 | 83.60 | 84.07 | 83.64 | 84.04 | 82.01 | 81.32 |
-| | | | | | | | | | |
-| | | | | | | | | | |
 | | | | | | | | | | |
 
 - [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
