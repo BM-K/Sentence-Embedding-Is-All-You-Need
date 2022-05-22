@@ -1,6 +1,34 @@
 # Korean-Sentence-Embedding
 🍭 Korean sentence embedding repository. You can download the pre-trained models and inference right away, also it provides environments where individuals can train models.
 
+## Quick tour
+```python
+import torch
+from transformers import AutoModel, AutoTokenizer
+
+def cal_score(a, b):
+    if len(a.shape) == 1: a = a.unsqueeze(0)
+    if len(b.shape) == 1: b = b.unsqueeze(0)
+
+    a_norm = a / a.norm(dim=1)[:, None]
+    b_norm = b / b.norm(dim=1)[:, None]
+    return torch.mm(a_norm, b_norm.transpose(0, 1)) * 100
+
+model = AutoModel.from_pretrained('BM-K/KoSimCSE-roberta')
+tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta')
+
+sentences = ['치타가 들판을 가로 질러 먹이를 쫓는다.',
+             '치타 한 마리가 먹이 뒤에서 달리고 있다.',
+             '원숭이 한 마리가 드럼을 연주한다.']
+
+inputs = tokenizer(sentences, padding=True, truncation=True, return_tensors="pt")
+_, embeddings = model(**inputs, return_dict=False)
+
+score01 = cal_score(embeddings[0], embeddings[1])  # 74.77
+score02 = cal_score(embeddings[0], embeddings[2])  # 19.69
+```
+
+## Update history
 ** Updates on 2022.03.01 **
 - Huggingface model porting
 
