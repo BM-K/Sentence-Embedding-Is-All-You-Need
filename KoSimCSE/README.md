@@ -2,6 +2,13 @@
 [[Github]](https://github.com/princeton-nlp/SimCSE) Official implementation of SimCSE. <br>
 KoSimCSE : Korean Sentence Embeddings using contrastive learning.
 
+## Quick start
+- If you want to do inference quickly, download the pre-trained models and then you can start some downstream tasks.
+```
+bash get_model_checkpoint.sh
+python SemanticSearch.py
+```
+
 ## Training 
 - Before training or evaluation, please download the datasets by running
 ```
