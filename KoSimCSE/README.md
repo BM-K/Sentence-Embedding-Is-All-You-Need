@@ -113,3 +113,43 @@ def main():
         for idx in top_results[0:top_k]:
             print(corpus[idx].strip(), "(Score: %.4f)" % (cos_scores[idx]))
 ```
+
+- Results are as follows :
+
+```
+
+Query: 한 남자가 파스타를 먹는다.
+
+Top 5 most similar sentences in corpus:
+한 남자가 음식을 먹는다. (Score: 0.6141)
+한 남자가 빵 한 조각을 먹는다. (Score: 0.5952)
+한 남자가 말을 탄다. (Score: 0.1231)
+한 남자가 담으로 싸인 땅에서 백마를 타고 있다. (Score: 0.0752)
+두 남자가 수레를 숲 솦으로 밀었다. (Score: 0.0486)
+
+
+======================
+
+
+Query: 고릴라 의상을 입은 누군가가 드럼을 연주하고 있다.
+
+Top 5 most similar sentences in corpus:
+원숭이 한 마리가 드럼을 연주한다. (Score: 0.6656)
+치타 한 마리가 먹이 뒤에서 달리고 있다. (Score: 0.2988)
+한 여자가 바이올린을 연주한다. (Score: 0.1566)
+한 남자가 말을 탄다. (Score: 0.1112)
+한 남자가 담으로 싸인 땅에서 백마를 타고 있다. (Score: 0.0262)
+
+
+======================
+
+
+Query: 치타가 들판을 가로 질러 먹이를 쫓는다.
+
+Top 5 most similar sentences in corpus:
+치타 한 마리가 먹이 뒤에서 달리고 있다. (Score: 0.7570)
+두 남자가 수레를 숲 솦으로 밀었다. (Score: 0.3658)
+원숭이 한 마리가 드럼을 연주한다. (Score: 0.3583)
+한 남자가 말을 탄다. (Score: 0.0505)
+그 여자가 아이를 돌본다. (Score: -0.0087)
+```
