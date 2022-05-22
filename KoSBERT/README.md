@@ -6,7 +6,6 @@ Korean SentenceBERT : Korean Sentence Embeddings using Siamese BERT-Networks.
 - If you want to do inference quickly, download the pre-trained models and then you can start some downstream tasks.
 ```
 bash get_model_checkpoint.sh
-cd KoSBERT/
 python SemanticSearch.py
 ```
 
