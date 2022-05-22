@@ -45,9 +45,9 @@ bash run_example.sh
 - Train KoSimCSE (BERT BASE)
   1. Pooling Method: [CLS] strategy
   2. Batch Size: 256
-  3. Evaluation Steps: 65
+  3. Evaluation Steps: 125
   4. Epochs: 2
-  5. Token Max Length: 50
+  5. Token Max Length: 128
   6. Learning Rate: 0.0001
   7. Warmup Ratio: 0.1
   8. Temperature: 0.05
@@ -55,11 +55,11 @@ bash run_example.sh
 - Train KoSimCSE (RoBERTa BASE)
   1. Pooling Method: [CLS] strategy
   2. Batch Size: 256
-  3. Evaluation Steps: 65
+  3. Evaluation Steps: 125
   4. Epochs: 2
-  5. Token Max Length: 50
+  5. Token Max Length: 128
   6. Learning Rate: 0.0001
-  7. Warmup Ratio: 0.1
+  7. Warmup Ratio: 0.05
   8. Temperature: 0.05
 
 ### Semantic Search
