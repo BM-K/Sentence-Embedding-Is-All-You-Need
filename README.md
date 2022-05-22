@@ -76,12 +76,12 @@ python SemanticSearch.py
 - [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
 
 ## Downstream Tasks
-- KoSBERT: Semantic Search, Clustering
+- KoSBERT: [Semantic Search](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT#semantic-search), [Clustering](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT#clustering)
 ```
 python SemanticSearch.py
 python Clustering.py
 ```
-- KoSimCSE: Semantic Search
+- KoSimCSE: [Semantic Search](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE#semantic-search)
 ```
 python SemanticSearch.py
 ```
