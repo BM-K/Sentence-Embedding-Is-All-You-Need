@@ -2,6 +2,14 @@
 [[Github]](https://github.com/UKPLab/sentence-transformers) Official implementation of SBERT. <br>
 Korean SentenceBERT : Korean Sentence Embeddings using Siamese BERT-Networks.
 
+## Quick start
+- If you want to do inference quickly, download the pre-trained models and then you can start some downstream tasks.
+```
+bash get_model_checkpoint.sh
+cd KoSBERT/
+python SemanticSearch.py
+```
+
 ## Training
 - Before training or evaluation, please download the datasets by running
     ```
