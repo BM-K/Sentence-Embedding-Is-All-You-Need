@@ -92,16 +92,9 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 - [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
 - [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
 
-## Downstream Tasks
+## Downstream tasks
 - KoSBERT: [Semantic Search](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT#semantic-search), [Clustering](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT#clustering)
-```
-python SemanticSearch.py
-python Clustering.py
-```
 - KoSimCSE: [Semantic Search](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE#semantic-search)
-```
-python SemanticSearch.py
-```
 
 ## References
 
