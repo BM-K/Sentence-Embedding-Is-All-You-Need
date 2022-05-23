@@ -70,6 +70,9 @@ bash run_example.sh
   8. Temperature: 0.05
 
 ### Semantic Search
+```
+python SemanticSearch.py
+```
 ```python
 from model.simcse.bert import BERT
 from transformers import AutoModel, AutoTokenizer
