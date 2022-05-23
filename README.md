@@ -14,18 +14,18 @@ def cal_score(a, b):
     b_norm = b / b.norm(dim=1)[:, None]
     return torch.mm(a_norm, b_norm.transpose(0, 1)) * 100
 
-model = AutoModel.from_pretrained('BM-K/KoSimCSE-roberta')
-tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta')
+model = AutoModel.from_pretrained('BM-K/KoSimCSE-roberta')  # or BM-K/KoSimCSE-bert
+tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta')  # or BM-K/KoSimCSE-bert
 
 sentences = ['치타가 들판을 가로 질러 먹이를 쫓는다.',
              '치타 한 마리가 먹이 뒤에서 달리고 있다.',
              '원숭이 한 마리가 드럼을 연주한다.']
 
 inputs = tokenizer(sentences, padding=True, truncation=True, return_tensors="pt")
-_, embeddings = model(**inputs, return_dict=False)
+embeddings, _ = model(**inputs, return_dict=False)
 
-score01 = cal_score(embeddings[0], embeddings[1])  # 74.77
-score02 = cal_score(embeddings[0], embeddings[2])  # 19.69
+score01 = cal_score(embeddings[0][0], embeddings[1][0])  # 73.72
+score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 18.87
 ```
 
 ## Update history
