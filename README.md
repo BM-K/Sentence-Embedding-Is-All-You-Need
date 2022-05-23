@@ -29,6 +29,11 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 18.87
 ```
 
 ## Update history
+** Updates on 2022.05.23 **
+- Upload KoSentenceT5 training code
+- Upload KoSentenceT5 performance
+- Update KoSimCSE-bert & roberta and port to huggingface model hub
+
 ** Updates on 2022.03.01 **
 - Huggingface model porting
 
@@ -54,6 +59,7 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 ## Available Models
 1. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks [[SBERT]-[EMNLP 2019]](https://arxiv.org/abs/1908.10084)
 2. SimCSE: Simple Contrastive Learning of Sentence Embeddings [[SimCSE]-[EMNLP 2021]](https://arxiv.org/abs/2104.08821)
+3. Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models [[Sentence-T5]-[ACL findings 2022]](https://arxiv.org/abs/2108.08877)
 
 ## Datasets
 - [kakao brain KorNLU Datasets](https://github.com/kakaobrain/KorNLUDatasets)
@@ -68,6 +74,13 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 
 ### KoSimCSE
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
+- Dataset
+    - Train: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
+    - Valid: sts-dev.tsv
+    - Test: sts-test.tsv
+
+### KoSentenceT5
+- 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSentenceT5)
 - Dataset
     - Train: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
     - Valid: sts-dev.tsv
