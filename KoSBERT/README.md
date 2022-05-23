@@ -44,7 +44,9 @@ python SemanticSearch.py
   4. Epochs: 4
 
 ### Semantic Search
-
+```
+python SemanticSearch.py
+```
 ```python
 from sentence_transformers import SentenceTransformer, util
 import numpy as np
@@ -131,6 +133,9 @@ Top 5 most similar sentences in corpus:
 ```
 
 ### Clustering 
+```
+python Clustering.py
+```
 ```python
 from sentence_transformers import SentenceTransformer, util
 import numpy as np
