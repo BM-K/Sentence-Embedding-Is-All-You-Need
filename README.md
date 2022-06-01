@@ -14,8 +14,8 @@ def cal_score(a, b):
     b_norm = b / b.norm(dim=1)[:, None]
     return torch.mm(a_norm, b_norm.transpose(0, 1)) * 100
 
-model = AutoModel.from_pretrained('BM-K/KoSimCSE-bert-multitask')
-tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-bert-multitask')
+model = AutoModel.from_pretrained('BM-K/KoSimCSE-roberta-multitask')  or 'BM-K/KoSimCSE-bert-multitask'
+tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta-multitask')  or 'BM-K/KoSimCSE-bert-multitask'
 
 sentences = ['치타가 들판을 가로 질러 먹이를 쫓는다.',
              '치타 한 마리가 먹이 뒤에서 달리고 있다.',
@@ -24,12 +24,12 @@ sentences = ['치타가 들판을 가로 질러 먹이를 쫓는다.',
 inputs = tokenizer(sentences, padding=True, truncation=True, return_tensors="pt")
 embeddings, _ = model(**inputs, return_dict=False)
 
-score01 = cal_score(embeddings[0][0], embeddings[1][0])  # 77.14
-score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 16.71
+score01 = cal_score(embeddings[0][0], embeddings[1][0])  # 84.09
+score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 ```
 
 ## Update history
-** Updates on 2022.06.02 **
+** Updates on 2022.06.01 **
 - Release multitask model
 
 ** Updates on 2022.05.23 **
@@ -106,7 +106,7 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 | KoSimCSE-RoBERTa          | 83.65 | 83.60 | 83.77 | 83.54 | 83.76 | 83.55 | 83.77 | 83.55 | 83.64 |
 | | | | | | | | | | |
 | KoSimCSE-BERT-multitask              | 85.71 | 85.29 | 86.02 | 85.63 | 86.01 | 85.57 | 85.97 | 85.26 | 85.93 |
-| KoSimCSE-RoBERTa-multitask          |  |  |  |  |  |  |  |  |  |
+| KoSimCSE-RoBERTa-multitask          | 85.77 | 85.08 | 86.12 | 85.84 | 86.12 | 85.83 | 86.12 | 85.03 | 85.99 |
 
 - [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
 - [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
