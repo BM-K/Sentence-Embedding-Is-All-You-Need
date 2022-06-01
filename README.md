@@ -14,8 +14,8 @@ def cal_score(a, b):
     b_norm = b / b.norm(dim=1)[:, None]
     return torch.mm(a_norm, b_norm.transpose(0, 1)) * 100
 
-model = AutoModel.from_pretrained('BM-K/KoSimCSE-roberta')  # or BM-K/KoSimCSE-bert
-tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta')  # or BM-K/KoSimCSE-bert
+model = AutoModel.from_pretrained('BM-K/KoSimCSE-bert-multitask')
+tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-bert-multitask')
 
 sentences = ['치타가 들판을 가로 질러 먹이를 쫓는다.',
              '치타 한 마리가 먹이 뒤에서 달리고 있다.',
@@ -24,11 +24,14 @@ sentences = ['치타가 들판을 가로 질러 먹이를 쫓는다.',
 inputs = tokenizer(sentences, padding=True, truncation=True, return_tensors="pt")
 embeddings, _ = model(**inputs, return_dict=False)
 
-score01 = cal_score(embeddings[0][0], embeddings[1][0])  # 73.72
-score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 18.87
+score01 = cal_score(embeddings[0][0], embeddings[1][0])  # 77.14
+score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 16.71
 ```
 
 ## Update history
+** Updates on 2022.06.02 **
+- Release multitask model
+
 ** Updates on 2022.05.23 **
 - Upload KoSentenceT5 training code
 - Upload KoSentenceT5 performance
@@ -95,12 +98,15 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 | KoSBERT              | 80.39 | 82.13 | 82.25 | 80.67 | 80.75 | 80.69 | 80.78 | 77.96 | 77.90 |
 | KoSRoBERTa           | 81.64 | 81.20 | 82.20 | 81.79 | 82.34 | 81.59 | 82.20 | 80.62 | 81.25 |
 | | | | | | | | | |
+| KoSentenceBART         | 77.14 | 79.71 | 78.74 | 78.42 | 78.02 | 78.40 | 78.00 | 74.24 | 72.15 |
+| KoSentenceT5          | 77.83 | 80.87 | 79.74 | 80.24 | 79.36 | 80.19 | 79.27 | 72.81 | 70.17 |
+| | | | | | | | | |
 | KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>   | 81.32 | 82.12 | 82.56 | 81.84 | 81.63 | 81.99 | 81.74 | 79.55 | 79.19 |
 | KoSimCSE-BERT              | 83.37 | 83.22 | 83.58 | 83.24 | 83.60 | 83.15 | 83.54 | 83.13 | 83.49 |
 | KoSimCSE-RoBERTa          | 83.65 | 83.60 | 83.77 | 83.54 | 83.76 | 83.55 | 83.77 | 83.55 | 83.64 |
 | | | | | | | | | | |
-| KoSentenceBART         | 77.14 | 79.71 | 78.74 | 78.42 | 78.02 | 78.40 | 78.00 | 74.24 | 72.15 |
-| KoSentenceT5          | 77.83 | 80.87 | 79.74 | 80.24 | 79.36 | 80.19 | 79.27 | 72.81 | 70.17 |
+| KoSimCSE-BERT-multitask              | 85.71 | 85.29 | 86.02 | 85.63 | 86.01 | 85.57 | 85.97 | 85.26 | 85.93 |
+| KoSimCSE-RoBERTa-multitask          |  |  |  |  |  |  |  |  |  |
 
 - [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
 - [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
