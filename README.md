@@ -14,8 +14,8 @@ def cal_score(a, b):
     b_norm = b / b.norm(dim=1)[:, None]
     return torch.mm(a_norm, b_norm.transpose(0, 1)) * 100
 
-model = AutoModel.from_pretrained('BM-K/KoSimCSE-roberta-multitask')  or 'BM-K/KoSimCSE-bert-multitask'
-tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta-multitask')  or 'BM-K/KoSimCSE-bert-multitask'
+model = AutoModel.from_pretrained('BM-K/KoSimCSE-roberta-multitask')  # or 'BM-K/KoSimCSE-bert-multitask'
+tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta-multitask')  # or 'BM-K/KoSimCSE-bert-multitask'
 
 sentences = ['치타가 들판을 가로 질러 먹이를 쫓는다.',
              '치타 한 마리가 먹이 뒤에서 달리고 있다.',
@@ -25,7 +25,9 @@ inputs = tokenizer(sentences, padding=True, truncation=True, return_tensors="pt"
 embeddings, _ = model(**inputs, return_dict=False)
 
 score01 = cal_score(embeddings[0][0], embeddings[1][0])  # 84.09
+# '치타가 들판을 가로 질러 먹이를 쫓는다.' @ '치타 한 마리가 먹이 뒤에서 달리고 있다.'
 score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
+# '치타가 들판을 가로 질러 먹이를 쫓는다.' @ '원숭이 한 마리가 드럼을 연주한다.'
 ```
 
 ## Update history
