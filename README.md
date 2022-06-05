@@ -32,7 +32,7 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 
 ## Update history
 ** Updates on 2022.06.01 **
-- Release multitask model
+- Release multitask models
 
 ** Updates on 2022.05.23 **
 - Upload KoSentenceT5 training code
