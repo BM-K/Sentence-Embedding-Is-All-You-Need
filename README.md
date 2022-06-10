@@ -31,25 +31,24 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 ```
 
 ## Update history
-> **Note**<br><br>
-> ** Updates on 2022.06.01 **
-> - Release multitask models
+** Updates on 2022.06.01 **
+- Release multitask models
 
-> ** Updates on 2022.05.23 **
-> - Upload KoSentenceT5 training code
-> - Upload KoSentenceT5 performance
-> - Update KoSimCSE-bert & roberta and port to huggingface model hub
+** Updates on 2022.05.23 **
+- Upload KoSentenceT5 training code
+- Upload KoSentenceT5 performance
+- Update KoSimCSE-bert & roberta and port to huggingface model hub
 
-> ** Updates on 2022.03.01 **
-> - Huggingface model porting
+** Updates on 2022.03.01 **
+- Huggingface model porting
 
-> ** Updates on 2022.02.11 **
-> - Upload KoSimCSE training code
-> - Upload KoSimCSE performance
+** Updates on 2022.02.11 **
+- Upload KoSimCSE training code
+- Upload KoSimCSE performance
 
-> ** Updates on 2022.01.26 **
-> - Upload KoSBERT training code
-> - Upload KoSBERT performance
+** Updates on 2022.01.26 **
+- Upload KoSBERT training code
+- Upload KoSBERT performance
 
 ## Baseline Models
 Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.com/KLUE-benchmark/KLUE/blob/main/README.md)
@@ -59,8 +58,8 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 | KLUE-BERT-base            | 768            | 768         | 12       | 12      |
 | KLUE-RoBERTa-base         | 768            | 768         | 12       | 12      |
 
-`NOTE`:  All the pretrained models are uploaded in Huggingface Model Hub. Check https://huggingface.co/klue.
-<br>
+> **Note** <br>
+> All the pretrained models are uploaded in Huggingface Model Hub. Check https://huggingface.co/klue.
 
 ## Available Models
 1. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks [[SBERT]-[EMNLP 2019]](https://arxiv.org/abs/1908.10084)
