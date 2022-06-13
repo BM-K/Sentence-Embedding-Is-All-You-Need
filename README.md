@@ -72,23 +72,23 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 ### KoSentenceBERT
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
 - Dataset
-    - Train: snli_1.0_train.ko.tsv, sts-train.tsv (multi-task)
+    - Training: snli_1.0_train.ko.tsv, sts-train.tsv (multi-task)
       - Performance can be further improved by adding multinli data to training.
-    - Valid: sts-dev.tsv
+    - Validation: sts-dev.tsv
     - Test: sts-test.tsv
 
 ### KoSimCSE
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
 - Dataset
-    - Train: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
-    - Valid: sts-dev.tsv
+    - Training: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
+    - Validation: sts-dev.tsv
     - Test: sts-test.tsv
 
 ### KoSentenceT5
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSentenceT5)
 - Dataset
-    - Train: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
-    - Valid: sts-dev.tsv
+    - Training: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
+    - Validation: sts-dev.tsv
     - Test: sts-test.tsv
 
 ## Performance
