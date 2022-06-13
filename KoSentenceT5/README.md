@@ -1,6 +1,7 @@
 # KoSentenceT5
 KoSentenceT5 : Korean Sentence Embeddings using T5. <br>
-This repository uses ETRI-T5 model and does not provide it. You can download T5 model from [here](https://aiopen.etri.re.kr/service_dataset.php).
+> **Warning** <br>
+> This repository uses ETRI-T5 model and does not provide it. You can download T5 model from [here](https://aiopen.etri.re.kr/service_dataset.php).
 
 ## Training 
 - Before training or evaluation, please download the datasets by running
