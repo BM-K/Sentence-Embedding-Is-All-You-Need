@@ -2,6 +2,8 @@
 🍭 Korean sentence embedding repository. You can download the pre-trained models and inference right away, also it provides environments where individuals can train models.
 
 ## Quick tour
+> **Note** <br>
+> All the pretrained models are uploaded in Huggingface Model Hub. Check https://huggingface.co/BM-K.
 ```python
 import torch
 from transformers import AutoModel, AutoTokenizer
@@ -57,9 +59,6 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 |----------------------|----------------|-------------|----------|---------|
 | KLUE-BERT-base            | 768            | 768         | 12       | 12      |
 | KLUE-RoBERTa-base         | 768            | 768         | 12       | 12      |
-
-> **Note** <br>
-> All the pretrained models are uploaded in Huggingface Model Hub. Check https://huggingface.co/klue.
 
 > **Warning** <br>
 > Large pretrained models need a lot of GPU memory to train.
