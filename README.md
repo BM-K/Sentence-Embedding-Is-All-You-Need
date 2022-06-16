@@ -61,6 +61,9 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 > **Note** <br>
 > All the pretrained models are uploaded in Huggingface Model Hub. Check https://huggingface.co/klue.
 
+> **Warning** <br>
+> Large pretrained models need a lot of GPU memory to train.
+
 ## Available Models
 1. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks [[SBERT]-[EMNLP 2019]](https://arxiv.org/abs/1908.10084)
 2. SimCSE: Simple Contrastive Learning of Sentence Embeddings [[SimCSE]-[EMNLP 2021]](https://arxiv.org/abs/2104.08821)
