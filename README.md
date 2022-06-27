@@ -152,5 +152,3 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
     url = "http://arxiv.org/abs/1908.10084",
 }
 ```
-## ToDo
-- [ ] New method
