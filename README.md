@@ -69,7 +69,7 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 3. Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models [[Sentence-T5]-[ACL findings 2022]](https://arxiv.org/abs/2108.08877)
 
 ## Datasets
-- [kakao brain KorNLU Datasets](https://github.com/kakaobrain/KorNLUDatasets)
+- [kakaobrain KorNLU Datasets](https://github.com/kakaobrain/KorNLUDatasets)
 
 ### KoSentenceBERT
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
