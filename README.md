@@ -3,7 +3,7 @@
 
 ## Quick tour
 > **Note** <br>
-> All the pretrained models are uploaded in Huggingface Model Hub. Check https://huggingface.co/BM-K.
+> All the pretrained models are uploaded in Huggingface Model Hub. Check https://huggingface.co/BM-K
 ```python
 import torch
 from transformers import AutoModel, AutoTokenizer
