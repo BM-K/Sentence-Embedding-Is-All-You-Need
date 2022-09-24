@@ -61,7 +61,7 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 | KLUE-RoBERTa-base         | 768            | 768         | 12       | 12      |
 
 > **Warning** <br>
-> Large pretrained models need a lot of GPU memory to train.
+> Large pre-trained models need a lot of GPU memory to train
 
 ## Available Models
 1. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks [[SBERT]-[EMNLP 2019]](https://arxiv.org/abs/1908.10084)
