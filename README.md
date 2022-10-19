@@ -33,22 +33,22 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 ```
 
 ## Update history
-** Updates on 2022.06.01 **
+** Updates on 06.01.2022 **
 - Release multitask models
 
-** Updates on 2022.05.23 **
+** Updates on 05.23.2022 **
 - Upload KoSentenceT5 training code
 - Upload KoSentenceT5 performance
 - Update KoSimCSE-bert & roberta and port to huggingface model hub
 
-** Updates on 2022.03.01 **
+** Updates on 03.01.2022 **
 - Huggingface model porting
 
-** Updates on 2022.02.11 **
+** Updates on 02.11.2022 **
 - Upload KoSimCSE training code
 - Upload KoSimCSE performance
 
-** Updates on 2022.01.26 **
+** Updates on 01.26.2022 **
 - Upload KoSBERT training code
 - Upload KoSBERT performance
 
