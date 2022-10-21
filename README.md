@@ -33,16 +33,20 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 ```
 
 ## Update history
+** Updates on 10.21.2022 **
+- Release KoSimCSE-v2
+- Upload KoSimCSE-v2 performance
+- Upload KoSimCSE-unsupervised performance
+
 ** Updates on 06.01.2022 **
-- Release multitask models
+- Release KoSimCSE-multitask models
 
 ** Updates on 05.23.2022 **
 - Upload KoSentenceT5 training code
 - Upload KoSentenceT5 performance
-- Update KoSimCSE-bert & roberta and port to huggingface model hub
 
 ** Updates on 03.01.2022 **
-- Huggingface model porting
+- Release KoSimCSE
 
 ** Updates on 02.11.2022 **
 - Upload KoSimCSE training code
@@ -69,7 +73,8 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 3. Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models [[Sentence-T5]-[ACL findings 2022]](https://arxiv.org/abs/2108.08877)
 
 ## Datasets
-- [kakaobrain KorNLU Datasets](https://github.com/kakaobrain/KorNLUDatasets)
+- [kakaobrain KorNLU Datasets](https://github.com/kakaobrain/KorNLUDatasets) (Supervised setting)
+- [wiki-corpus](https://github.com/jeongukjae/korean-wikipedia-corpus) (Unsupervised setting)
 
 ### KoSentenceBERT
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
@@ -82,7 +87,8 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 ### KoSimCSE
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE)
 - Dataset
-    - Training: snli_1.0_train.ko.tsv + multinli.train.ko.tsv
+    - Training: snli_1.0_train.ko.tsv + multinli.train.ko.tsv (Supervised setting)
+    - Training: wiki_corpus.txt (Unsupervised setting)
     - Validation: sts-dev.tsv
     - Test: sts-test.tsv
 
@@ -93,7 +99,7 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
     - Validation: sts-dev.tsv
     - Test: sts-test.tsv
 
-## Performance
+## Performance-supervised
 - Semantic Textual Similarity test set results <br>
 
 | Model                  | Average | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
@@ -114,6 +120,15 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 
 - [KoSBERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSentenceBERT-SKT)
 - [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
+
+## Performance-unsupervised
+- Semantic Textual Similarity test set results <br>
+
+| Model                  | Average | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
+|------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| KoSimCSE-BERT    | 71.97 | 72.99 | 71.94 | 71.84 | 72.20 | 71.68 | 72.00 | 72.07 | 71.05 |
+| KoSimCSE-RoBERTa    |  |  |  |  |  |  |  |  |  |
+| | | | | | | | | | |
 
 ## Downstream tasks
 - KoSBERT: [Semantic Search](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT#semantic-search), [Clustering](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT#clustering)
