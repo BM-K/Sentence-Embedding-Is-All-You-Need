@@ -128,7 +128,7 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 | Model                  | Average | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
 |------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | KoSimCSE-BERT    | 71.97 | 72.99 | 71.94 | 71.84 | 72.20 | 71.68 | 72.00 | 72.07 | 71.05 |
-| KoSimCSE-RoBERTa    |  |  |  |  |  |  |  |  |  |
+| KoSimCSE-RoBERTa    | 73.57 | 74.32 | 73.29 | 73.44 | 73.29 | 73.37 | 73.20 | 74.37 | 73.32 |
 | | | | | | | | | | |
 
 ## Downstream tasks
