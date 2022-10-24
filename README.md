@@ -101,7 +101,6 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
     - Test: sts-test.tsv
 
 ## Performance-supervised
-- Semantic Textual Similarity test set results <br>
 
 | Model                  | Average | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
 |------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
@@ -123,7 +122,6 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 - [KoSimCSE-BERT<sup>†</sup><sub>SKT</sub>](https://github.com/BM-K/KoSimCSE-SKT)
 
 ## Performance-unsupervised
-- Semantic Textual Similarity test set results <br>
 
 | Model                  | Average | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
 |------------------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
