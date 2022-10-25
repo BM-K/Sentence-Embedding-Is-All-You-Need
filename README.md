@@ -33,24 +33,24 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 ```
 
 ## Update history
-** Updates on 10.21.2022 **
+** Updates on Oct.21.2022 **
 - Upload KoSimCSE-unsupervised performance
 
-** Updates on 06.01.2022 **
+** Updates on Jun.01.2022 **
 - Release KoSimCSE-multitask models
 
-** Updates on 05.23.2022 **
+** Updates on May.23.2022 **
 - Upload KoSentenceT5 training code
 - Upload KoSentenceT5 performance
 
-** Updates on 03.01.2022 **
+** Updates on Mar.01.2022 **
 - Release KoSimCSE
 
-** Updates on 02.11.2022 **
+** Updates on Feb.11.2022 **
 - Upload KoSimCSE training code
 - Upload KoSimCSE performance
 
-** Updates on 01.26.2022 **
+** Updates on Jan.26.2022 **
 - Upload KoSBERT training code
 - Upload KoSBERT performance
 
