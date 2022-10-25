@@ -74,6 +74,10 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 - [kakaobrain KorNLU Datasets](https://github.com/kakaobrain/KorNLUDatasets) (Supervised setting)
 - [wiki-corpus](https://github.com/jeongukjae/korean-wikipedia-corpus) (Unsupervised setting)
 
+## Setups
+[![Python](https://img.shields.io/badge/python-3.8.5-blue?logo=python&logoColor=FED643)](https://www.python.org/downloads/release/python-385/)
+[![Pytorch](https://img.shields.io/badge/pytorch-1.7.1-red?logo=pytorch)](https://pytorch.org/get-started/previous-versions/)
+
 ### KoSentenceBERT
 - 🤗 [Model Training](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT)
 - Dataset (Supervised)
