@@ -33,6 +33,9 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 ```
 
 ## Update history
+** Updates on Oct.27.2022 **
+- Upload KoDiffCSE-unsupervised performance
+
 ** Updates on Oct.21.2022 **
 - Upload KoSimCSE-unsupervised performance
 
@@ -69,6 +72,7 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 1. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks [[SBERT]-[EMNLP 2019]](https://arxiv.org/abs/1908.10084)
 2. SimCSE: Simple Contrastive Learning of Sentence Embeddings [[SimCSE]-[EMNLP 2021]](https://arxiv.org/abs/2104.08821)
 3. Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models [[Sentence-T5]-[ACL findings 2022]](https://arxiv.org/abs/2108.08877)
+4. DiffCSE: Difference-based Contrastive Learning for Sentence Embeddings [[DiffCSE]-[NAACL 2022]](https://arxiv.org/abs/2204.10298)
 
 ## Datasets
 - [kakaobrain KorNLU Datasets](https://github.com/kakaobrain/KorNLUDatasets) (Supervised setting)
@@ -135,6 +139,7 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 | KoSimCSE-BERT    | 71.97 | 72.99 | 71.94 | 71.84 | 72.20 | 71.68 | 72.00 | 72.07 | 71.05 |
 | KoSimCSE-RoBERTa    | 73.57 | 74.32 | 73.29 | 73.44 | 73.29 | 73.37 | 73.20 | 74.37 | 73.32 |
 | | | | | | | | | | |
+| KoDiffCSE-RoBERTa    | 75.65 | 76.58 | 75.42 | 75.66 | 75.49 | 75.63 | 75.49 | 76.51 | 75.30 |
 
 - [Korean-SRoBERTa<sup>†</sup>](https://arxiv.org/abs/2004.03289)
 
@@ -158,18 +163,21 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
     archivePrefix={arXiv},
     primaryClass={cs.CL}
 }
+
 @inproceedings{gao2021simcse,
    title={{SimCSE}: Simple Contrastive Learning of Sentence Embeddings},
    author={Gao, Tianyu and Yao, Xingcheng and Chen, Danqi},
    booktitle={Empirical Methods in Natural Language Processing (EMNLP)},
    year={2021}
 }
+
 @article{ham2020kornli,
   title={KorNLI and KorSTS: New Benchmark Datasets for Korean Natural Language Understanding},
   author={Ham, Jiyeon and Choe, Yo Joong and Park, Kyubyong and Choi, Ilji and Soh, Hyungjoon},
   journal={arXiv preprint arXiv:2004.03289},
   year={2020}
 }
+
 @inproceedings{reimers-2019-sentence-bert,
     title = "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
     author = "Reimers, Nils and Gurevych, Iryna",
@@ -178,5 +186,12 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
     year = "2019",
     publisher = "Association for Computational Linguistics",
     url = "http://arxiv.org/abs/1908.10084",
+}
+
+@inproceedings{chuang2022diffcse,
+   title={{DiffCSE}: Difference-based Contrastive Learning for Sentence Embeddings},
+   author={Chuang, Yung-Sung and Dangovski, Rumen and Luo, Hongyin and Zhang, Yang and Chang, Shiyu and Soljacic, Marin and Li, Shang-Wen and Yih, Wen-tau and Kim, Yoon and Glass, James},
+   booktitle={Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)},
+   year={2022}
 }
 ```
