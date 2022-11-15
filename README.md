@@ -33,6 +33,10 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 ```
 
 ## Update history
+
+** Updates on Nov.15.2022 **
+- Upload KoDiffCSE-unsupervised training code
+
 ** Updates on Oct.27.2022 **
 - Upload KoDiffCSE-unsupervised performance
 
@@ -108,6 +112,13 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
     - Validation: sts-dev.tsv
     - Test: sts-test.tsv
 
+### KoDiffCSE
+- 🤗 [Model Training](https://github.com/BM-K/KoDiffCSE)
+- Dataset (Unsupervised)
+    - Training: wiki_corpus.txt
+    - Validation: sts-dev.tsv
+    - Test: sts-test.tsv
+    
 ## Performance-supervised
 
 | Model                  | Average | Cosine Pearson | Cosine Spearman | Euclidean Pearson | Euclidean Spearman | Manhattan Pearson | Manhattan Spearman | Dot Pearson | Dot Spearman |
