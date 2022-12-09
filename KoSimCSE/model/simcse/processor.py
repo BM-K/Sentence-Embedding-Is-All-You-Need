@@ -136,11 +136,11 @@ class Processor():
 
             if self.model_progress['iter'] % self.args.eval_steps == 0 or self.model_progress['iter'] == self.total_steps:
                 valid_score = self.valid()
-
                 performance = {'tl': train_loss, 'vs': valid_score, 'ep': epoch, 'step': self.model_progress['iter']}
-
+                
                 self.metric.save_model(self.config, performance, self.model_checker)
-
+                self.config['model'].train()
+                
     def valid(self):
         self.config['model'].eval()
         self.dev_progress = self.dev_progress.fromkeys(self.dev_progress, 0)
