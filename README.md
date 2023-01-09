@@ -147,8 +147,8 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 | KoSRoBERTa-base<sup>†</sup>    | N/A | N/A | 48.96 | N/A | N/A | N/A | N/A | N/A | N/A |
 | KoSRoBERTa-large<sup>†</sup>    | N/A | N/A | 51.35 | N/A | N/A | N/A | N/A | N/A | N/A |
 | | | | | | | | | | |
-| KoSimCSE-BERT    | 71.97 | 72.99 | 71.94 | 71.84 | 72.20 | 71.68 | 72.00 | 72.07 | 71.05 |
-| KoSimCSE-RoBERTa    | 73.57 | 74.32 | 73.29 | 73.44 | 73.29 | 73.37 | 73.20 | 74.37 | 73.32 |
+| KoSimCSE-BERT    | 74.08 | 74.92 | 73.98 | 74.15 | 74.22 | 74.07 | 74.07 | 74.15 | 73.14 |
+| KoSimCSE-RoBERTa    | 75.27 | 75.93 | 75.00 | 75.28 | 75.01 | 75.17 | 74.83 | 75.95 | 75.01 |
 | | | | | | | | | | |
 | KoDiffCSE-RoBERTa    | 77.17 | 77.73 | 76.96 | 77.21 | 76.89 | 77.11 | 76.81 | 77.74 | 76.97 |
 
