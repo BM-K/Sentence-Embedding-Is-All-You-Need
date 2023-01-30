@@ -1,5 +1,5 @@
 # Korean-Sentence-Embedding
-🍭 Korean sentence embedding repository. You can download the pre-trained models and inference right away, also it provides environments where individuals can train models.
+Korean sentence embedding repository. You can download the pre-trained models and inference right away, also it provides environments where individuals can train models.
 
 ## Quick tour
 > **Note** <br>
