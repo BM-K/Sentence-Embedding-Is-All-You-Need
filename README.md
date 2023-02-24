@@ -34,6 +34,9 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 
 ## Update history
 
+** Updates on Feb.15.2023 **
+- Upload KoSimCSE clustering example
+
 ** Updates on Nov.15.2022 **
 - Upload KoDiffCSE-unsupervised training code
 
@@ -156,7 +159,7 @@ Baseline models used for korean sentence embedding - [KLUE-PLMs](https://github.
 
 ## Downstream tasks
 - KoSBERT: [Semantic Search](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT#semantic-search), [Clustering](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSBERT#clustering)
-- KoSimCSE: [Semantic Search](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE#semantic-search)
+- KoSimCSE: [Semantic Search](https://github.com/BM-K/Sentence-Embedding-is-all-you-need/tree/main/KoSimCSE#semantic-search), [Clustering](https://github.com/BM-K/Sentence-Embedding-Is-All-You-Need/tree/main/KoSimCSE#clustering)
 
 ## License
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
