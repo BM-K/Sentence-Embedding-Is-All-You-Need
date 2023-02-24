@@ -163,3 +163,117 @@ Top 5 most similar sentences in corpus:
 한 남자가 말을 탄다. (Score: 0.0505)
 그 여자가 아이를 돌본다. (Score: -0.0087)
 ```
+
+### Clustering
+```python
+import torch
+
+from tqdm import tqdm
+from sklearn.cluster import KMeans
+from transformers import (
+    AutoModel,
+    AutoTokenizer
+)
+
+def encode(model=None,
+           tokenizer=None,
+           corpus=None,
+           ):
+
+    tokenized_corpus = tokenizer(corpus,
+                                 truncation=True,
+                                 return_tensors='pt',
+                                 max_length=token_max_len,
+                                 padding='max_length')
+
+    embeddings, _ = model(input_ids=tokenized_corpus['input_ids'].to(device),
+                          token_type_ids=tokenized_corpus['token_type_ids'].to(device),
+                          attention_mask=tokenized_corpus['attention_mask'].to(device),
+                          return_dict=False)
+
+    return embeddings[:, 0].cpu().detach()
+
+def get_model():
+
+    model = AutoModel.from_pretrained('BM-K/KoSimCSE-roberta-multitask')
+    tokenizer = AutoTokenizer.from_pretrained('BM-K/KoSimCSE-roberta-multitask')
+
+    model.eval()
+
+    return model.to(device), tokenizer
+
+def get_cluster(corpus_embeddings
+                ):
+
+    clustering_model = KMeans(n_clusters=num_clusters)
+    clustering_model.fit(corpus_embeddings)
+
+    return clustering_model.labels_
+
+def main():
+    # Corpus with example sentences
+    corpus = ['한 남자가 음식을 먹는다.',
+              '한 남자가 빵 한 조각을 먹는다.',
+              '그 여자가 아이를 돌본다.',
+              '한 남자가 말을 탄다.',
+              '한 여자가 바이올린을 연주한다.',
+              '두 남자가 수레를 숲 솦으로 밀었다.',
+              '한 남자가 담으로 싸인 땅에서 백마를 타고 있다.',
+              '원숭이 한 마리가 드럼을 연주한다.',
+              '치타 한 마리가 먹이 뒤에서 달리고 있다.',
+              '한 남자가 파스타를 먹는다.',
+              '고릴라 의상을 입은 누군가가 드럼을 연주하고 있다.',
+              '치타가 들판을 가로 질러 먹이를 쫓는다.']
+
+    n_corpus = len(corpus)
+
+    model, tokenizer = get_model()
+
+    corpus_embeddings = torch.tensor([])
+    for start_idx in tqdm(range(0, n_corpus, embedding_batch)):
+        batch_corps = corpus[start_idx:start_idx+embedding_batch]
+        batch_embedding = encode(model, tokenizer, batch_corps)
+        corpus_embeddings = torch.cat([corpus_embeddings, batch_embedding], dim=0)
+
+    assert n_corpus == corpus_embeddings.size(0)
+
+    cluster_assignment = get_cluster(corpus_embeddings)
+
+    clustered_sentences = [[] for _ in range(num_clusters)]
+    for sentence_id, cluster_id in enumerate(cluster_assignment):
+        clustered_sentences[cluster_id].append(corpus[sentence_id])
+
+    for i, cluster in enumerate(clustered_sentences):
+        print("Cluster ", i + 1)
+        print(cluster)
+        print("")
+
+if __name__ == '__main__':
+    num_clusters = 5
+    token_max_len = 50
+    embedding_batch = 3
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+
+    main()
+```
+
+- Results are as follows :
+
+```
+
+Cluster  1
+['한 남자가 음식을 먹는다.', '한 남자가 빵 한 조각을 먹는다.', '한 남자가 파스타를 먹는다.']
+
+Cluster  2
+['한 여자가 바이올린을 연주한다.', '원숭이 한 마리가 드럼을 연주한다.', '고릴라 의상을 입은 누군가가 드럼을 연주하고 있다.']
+
+Cluster  3
+['한 남자가 말을 탄다.', '두 남자가 수레를 숲 솦으로 밀었다.', '한 남자가 담으로 싸인 땅에서 백마를 타고 있다.']
+
+Cluster  4
+['그 여자가 아이를 돌본다.']
+
+Cluster  5
+['치타 한 마리가 먹이 뒤에서 달리고 있다.', '치타가 들판을 가로 질러 먹이를 쫓는다.']
+
+```
