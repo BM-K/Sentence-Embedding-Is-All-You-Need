@@ -34,7 +34,7 @@ score02 = cal_score(embeddings[0][0], embeddings[2][0])  # 23.21
 
 ## Update history
 
-** Updates on Feb.15.2023 **
+** Updates on Feb.24.2023 **
 - Upload KoSimCSE clustering example
 
 ** Updates on Nov.15.2022 **
