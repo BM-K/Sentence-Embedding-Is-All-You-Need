@@ -109,7 +109,6 @@ class Metric():
 
         sorted_path = config['args'].path_to_save + "kosimcse-" + config['args'].model.replace("/", "-") + '.pt'
         if cp['vs'] > pco['best_valid_score']:
-            # pco['early_stop_patient'] = 0
             pco['best_valid_score'] = cp['vs']
 
             state = {'model': config['model'].state_dict(),
@@ -120,10 +119,6 @@ class Metric():
                   f' valid_score: {cp["vs"]:.4f} |'
                   f' epochs: {cp["ep"]} |'
                   f' steps: {cp["step"]} ##\n')
-
-        # self.draw_graph(cp)
-        # self.performance_check(cp, config)
-
 
 def pytorch_cos_sim(a, b):
     """
