@@ -20,7 +20,7 @@ class Metric():
 
     def cal_acc(self, yhat, y):
         with torch.no_grad():
-            yhat = yhat.max(dim=-1)[1]  # [0]: max value, [1]: index of max value
+            yhat = yhat.max(dim=-1)[1]
             acc = (yhat == y).float().mean()
 
         return acc
