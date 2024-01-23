@@ -1,5 +1,5 @@
 # Korean-Sentence-Embedding
-The Korean Sentence Embedding Repository offers pre-trained models, readily available for immediate download and inference. Additionally, it furnishes an environment conducive to individualized model training.
+The Korean Sentence Embedding Repository provides pre-trained models that are ready for instant download and use. Moreover, it offers an environment that is well-suited for personalized model training.
 
 ## Quick tour
 > **Note** <br>
